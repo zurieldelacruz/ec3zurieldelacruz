@@ -50,6 +50,6 @@ Content-Type: application/json
 
 {"nombre": "Timbal"}
 
-##########
+#####
 
 GET {{server}}/categorias/1/instrumentos
