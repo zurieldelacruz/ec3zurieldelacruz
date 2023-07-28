@@ -1,0 +1,54 @@
+
+
+
+@server = https://zurieldelacruz-probable-engine-pxjg77xvp4v297-8080.preview.app.github.dev
+
+
+
+
+##
+
+GET {{server}}/
+
+###
+
+GET {{server}}/categorias
+
+###
+POST {{server}}/categorias
+Content-Type: application/json
+
+{"nombre": "Instrumentos de Percusion"}
+
+
+###
+PATCH {{server}}/categorias/1
+Content-Type: application/json
+
+{"nombre": "Instrumentos de Viento"}
+
+
+
+###
+
+GET {{server}}/instrumentos
+
+
+###
+GET {{server}}/instrumentos?size=2&page=3
+
+
+##########
+
+GET {{server}}/instrumentos
+
+###
+
+POST {{server}}/instrumentos
+Content-Type: application/json
+
+{"nombre": "Timbal"}
+
+##########
+
+GET {{server}}/categorias/1/instrumentos
